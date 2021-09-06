@@ -1,0 +1,49 @@
+form#root-form {
+    width: 40%;
+    height: 80%;
+    left: 30%;
+    top: 10%;
+}
+
+label#root-form-mailAddress {
+    top: 20%;
+    left: 0;
+}
+
+input#root-form-inputMailAddress {
+    color: black;
+    width: 50%;
+    height: 6%;
+    top: 21%;
+    left: 40%;
+    border: none;
+    border-radius: 5px;
+}
+
+label#root-form-password {
+    top: 40%;
+    left: 0;
+}
+
+input#root-form-inputPassword {
+    color: black;
+    width: 50%;
+    height: 6%;
+    top: 41%;
+    left: 40%;
+    border: none;
+    border-radius: 5px;
+}
+
+button#root-form-button {
+    color: black;
+    width: 30%;
+    height: 10%;
+    top: 60%;
+    left: 35%;
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    background-color: #eb6100;
+}

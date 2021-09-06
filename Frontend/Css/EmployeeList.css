@@ -1,0 +1,151 @@
+/* ナビゲーション */
+div#root-navigation {
+    width: 100%;
+    height: 5%;
+    border-bottom: 1px black solid;
+}
+
+p#root-navigation-logout {
+    right: 10%;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* 概要 */
+div#root-overview {
+    top: 5%;
+    width: 100%;
+    height: 15%;
+    border-bottom: 1px black solid;
+}
+
+div#root-overview * {
+    font-size: 4vh;
+}
+
+p#root-overview-totalPeople {
+    top: 10%;
+    left: 10%;
+    margin: 0;
+}
+
+p#root-overview-approved {
+    top: 10%;
+    left: 35%;
+    margin: 0;
+}
+
+p#root-overview-approvalPending {
+    top: 10%;
+    left: 55%;
+    margin: 0;
+}
+
+p#root-overview-unapplied {
+    top: 10%;
+    left: 75%;
+    margin: 0;
+}
+
+p#root-overview-totalWorkingHours {
+    top: 50%;
+    left: 10%;
+    margin: 0;
+}
+
+p#root-overview-totalOvertimeHours {
+    top: 50%;
+    left: 35%;
+    margin: 0;
+}
+
+p#root-overview-totalAbsenceHours {
+    top: 50%;
+    left: 55%;
+    margin: 0;
+}
+
+/* メニュー */
+div#root-menu {
+    top: 20%;
+    width: 100%;
+    height: 5%;
+}
+
+span#root-menu-lastMonth {
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    cursor: pointer;
+}
+
+span#root-menu-thisMonth {
+    left: 5%;
+}
+
+span#root-menu-nextMonth {
+    left: 10%;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    cursor: pointer;
+}
+
+/* 詳細 */
+div#root-detail {
+    top: 25%;
+    width: 100%;
+    height: 75%;
+    overflow-y: auto;
+}
+
+div#root-detail * {
+    position: static;
+    border: 1px black solid;
+}
+
+th#root-detail-employee-header-status {
+    width: 10%;
+}
+
+th#root-detail-employee-header-approvalNumber {
+    width: 8%;
+}
+
+th#root-detail-employee-header-verification {
+    width: 6%;
+}
+
+th#root-detail-employee-header-name {
+    width: 16%;
+}
+
+th#root-detail-employee-header-workingDays {
+    width: 10%;
+}
+
+th#root-detail-employee-header-workingHours {
+    width: 10%;
+}
+
+th#root-detail-employee-header-normalOvertimeHours {
+    width: 10%;
+}
+
+th#root-detail-employee-header-midnightOvertimeHours {
+    width: 10%;
+}
+
+th#root-detail-employee-header-absenceDays {
+    width: 10%;
+}
+
+th#root-detail-employee-header-absenceHours {
+    width: 10%;
+}
+
+p.root-detail-employee-row-employeeId {
+    display: none;
+}
+
+td.root-detail-employee-row-verification {
+    cursor: pointer;
+}

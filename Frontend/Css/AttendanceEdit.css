@@ -1,0 +1,89 @@
+p#root-attendanceId {
+    display: none;
+}
+
+p#root-employeeId {
+    display: none;
+}
+
+p#root-status {
+    display: none;
+}
+
+label#root-date {
+    top: 10%;
+    left: 45%;
+    width: 10%;
+}
+
+label#root-startTime {
+    top: 20%;
+    left: 20%;
+}
+
+input#root-startTimeInput {
+    top: 20%;
+    left: 30%;
+}
+
+label#root-finishTime {
+    top: 30%;
+    left: 20%;
+}
+
+input#root-finishTimeInput {
+    top: 30%;
+    left: 30%;
+}
+
+label#root-breakTime {
+    top: 40%;
+    left: 20%;
+}
+
+input#root-breakTimeInput {
+    top: 40%;
+    left: 30%;
+}
+
+label#root-workingHours {
+    top: 20%;
+    left: 60%;
+}
+
+label#root-overtime {
+    top: 30%;
+    left: 60%;
+}
+
+label#root-midnightOvertime {
+    top: 40%;
+    left: 60%;
+}
+
+label#root-absenceHours {
+    top: 50%;
+    left: 60%;
+}
+
+label#root-remarks {
+    top: 50%;
+    left: 20%;
+}
+
+textarea#root-remarksInput {
+    top: 50%;
+    left: 30%;
+}
+
+div#root-button {
+    top: 80%;
+    left: 45%;
+    width: 10%;
+    text-align: center;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    background-color: #eb6100;
+    cursor: pointer;
+}

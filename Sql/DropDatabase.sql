@@ -1,0 +1,1 @@
+drop database attendance_management;

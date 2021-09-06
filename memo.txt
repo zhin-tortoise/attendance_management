@@ -1,0 +1,139 @@
+作成順
+  画面モック作成
+    従業員ログイン画面 => OK
+    勤怠一覧画面 => OK
+    勤怠編集画面 => OK
+    承認者ログイン画面 => OK
+    従業員一覧画面 => OK
+    勤怠確認画面 => OK
+  テーブル作成
+    従業員 => OK
+    勤怠 => OK
+    チーム => OK
+  プログラム作成
+    バックエンド
+      ログイン機能 => OK
+      ログアウト機能 => OK
+      1日単位の勤怠管理機能 => OK
+      1月単位の勤怠管理機能 => OK
+      申請機能 => OK
+      一括申請機能 => OK
+      取り下げ機能 => OK
+      一括取り下げ機能 => OK
+      勤怠更新機能 => OK
+    フロントエンド
+      従業員ログイン画面 => OK
+      勤怠一覧画面 => OK
+      勤怠編集画面 => OK
+      承認者ログイン画面 => OK
+      従業員一覧画面 => OK
+      勤怠確認画面 => OK
+
+画面
+  従業員ログイン画面 EmployeeLogin.html
+  勤怠一覧画面 AttendanceList.html
+  勤怠編集画面 AttendanceEdit.html
+  承認者ログイン画面 AuthorizerLogin.html
+  従業員一覧画面 EmployeeList.html
+  勤怠確認画面 AttendanceVerification.html
+
+画面遷移
+  EmployeeLogin.html => AttendanceList.html <=> AttendanceEdit.html
+                     => EmployeeLoginFailed.html
+  AuthorizerLogin.html => EmployeeList.html <=> AttendanceVerification.html
+
+機能
+  ログイン
+  ログアウト
+  勤怠一覧
+  勤怠編集
+
+テーブル
+  従業員 employee
+    従業員ID employee_id
+    名前 name
+    メールアドレス mail_address
+    パスワード password
+  勤怠 attendance
+    勤怠ID attendance_id
+    従業員ID employee_id
+    勤務日 working_day
+    曜日 day_of_the_week
+    ステータス status
+    始業時刻 start_time
+    終業時刻 finish_time
+    休憩時間 break_time
+    勤務時間 working_hours
+    残業時間 overtime
+    普通残業 normal_overtime
+    深夜残業 midnight_overtime
+    欠課時間 absence_hours
+    備考 remarks
+  チーム team
+    承認者ID authorizer_id
+    従業員ID employee_id
+
+プログラム
+  バックエンド
+    アプリケーション
+      ログインアプリケーション LoginApplication
+      勤怠アプリケーション AttendanceApplication
+    ドメイン
+      従業員エンティティ EmployeeEntity
+      勤怠エンティティ AttendanceEntity
+      チームエンティティ TeamEntity
+    リポジトリ
+      従業員リポジトリ EmployeeRepository
+      勤怠リポジトリ AttendanceRepository
+      チームリポジトリ TeamRepository
+
+ユビキタス言語
+  一般的
+    名前 name
+    メールアドレス mailAddress
+    パスワード password
+    背景 background
+    ログイン login
+    ログアウト logout
+    今月 thisMonth
+    先月 lastMonth
+    来月 nextMonth
+    曜日 dayOfTheWeek
+    日付 date
+    確認 verification
+    チーム team
+    時間 time
+    時 hours
+    分 minutes
+  業務的
+    従業員 employee
+    勤怠 attendance
+    ステータス status
+    未申請 unapplied
+    申請 request
+    一括申請 bulkRequest
+    取り下げ cancel
+    一括取り下げ bulkCancel
+    承認済み approved
+    承認待ち approvalPending
+    承認数 approvalNumber
+    編集 edit
+    始業時刻 startTime
+    終業時刻 finishTime
+    休憩時間 breakTime
+    残業時間 overtime
+    勤務日 workingDay
+    勤務日数 workingDays
+    勤務時間 workingHours
+    普通残業 normalOvertime
+    深夜残業 midnightOvertime
+    勤務時間合計 totalWorkingHours
+    欠課時間 absenceHours
+    欠課日数 absenceDays
+    備考 remarks
+    承認者 authorizer
+    総人数 totalPeople
+    総勤務時間 totalWorkingHours
+    総残業時間 totalOvertimeHours
+    総欠課時間 totalAbsenceHours
+    勤怠管理 attendanceManagement

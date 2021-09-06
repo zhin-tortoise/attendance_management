@@ -1,0 +1,14 @@
+{
+    "production" : {
+        "host" : "mysql1.php.xdomain.ne.jp",
+        "name" : "back_attendance",
+        "user" : "back_user",
+        "password" : "syp4sDA0J"
+    },
+    "develop" : {
+        "host" : "localhost",
+        "name" : "attendance_management",
+        "user" : "root",
+        "password" : "password"
+    }
+}

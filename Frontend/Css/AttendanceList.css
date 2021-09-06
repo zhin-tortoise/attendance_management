@@ -1,0 +1,193 @@
+/* ナビゲーション */
+div#root-navigation {
+    width: 100%;
+    height: 5%;
+    border-bottom: 1px black solid;
+}
+
+p#root-navigation-logout {
+    right: 10%;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* 概要 */
+div#root-overview {
+    top: 5%;
+    width: 100%;
+    height: 15%;
+    border-bottom: 1px black solid;
+}
+
+div#root-overview * {
+    font-size: 4vh;
+}
+
+p#root-overview-workingDays {
+    top: 10%;
+    left: 10%;
+    margin: 0;
+}
+
+p#root-overview-workingHours {
+    top: 10%;
+    left: 30%;
+    margin: 0;
+}
+
+p#root-overview-normalOvertime {
+    top: 10%;
+    left: 50%;
+    margin: 0;
+}
+
+p#root-overview-midnightOvertime {
+    top: 10%;
+    left: 70%;
+    margin: 0;
+}
+
+p#root-overview-absenceDays {
+    top: 50%;
+    left: 10%;
+    margin: 0;
+}
+
+
+p#root-overview-absenceHours {
+    top: 50%;
+    left: 30%;
+    margin: 0;
+}
+
+
+/* メニュー */
+div#root-menu {
+    top: 20%;
+    width: 100%;
+    height: 5%;
+}
+
+span#root-menu-lastMonth {
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    cursor: pointer;
+}
+
+span#root-menu-thisMonth {
+    left: 5%;
+}
+
+span#root-menu-nextMonth {
+    left: 10%;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    cursor: pointer;
+}
+
+span#root-menu-bulkRequest {
+    left: 20%;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    cursor: pointer;
+}
+
+span#root-menu-bulkCancel {
+    left: 30%;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    cursor: pointer;
+}
+
+/* 詳細 */
+div#root-detail {
+    top: 25%;
+    width: 100%;
+    height: 75%;
+    overflow-y: auto;
+}
+
+div#root-detail * {
+    position: static;
+    border: 1px black solid;
+}
+
+tr.root-detail-attendance-row-saturday {
+    background-color: skyblue;
+}
+
+tr.root-detail-attendance-row-sunday {
+    background-color: pink;
+}
+
+th#root-detail-attendance-header-status {
+    width: 8%;
+}
+
+th#root-detail-attendance-header-request {
+    width: 5%;
+}
+
+th#root-detail-attendance-header-edit {
+    width: 5%;
+}
+
+th#root-detail-attendance-header-cancel {
+    width: 8%;
+}
+
+th#root-detail-attendance-header-workingDay {
+    width: 5%;
+}
+
+th#root-detail-attendance-header-dayOfTheWeek {
+    width: 5%;
+}
+
+th#root-detail-attendance-header-startTime {
+    width: 8%;
+}
+
+th#root-detail-attendance-header-finishTime {
+    width: 8%;
+}
+
+th#root-detail-attendance-header-breakTime {
+    width: 8%;
+}
+
+th#root-detail-attendance-header-workingHours {
+    width: 8%;
+}
+
+th#root-detail-attendance-header-overtime {
+    width: 8%;
+}
+
+th#root-detail-attendance-header-midnightOvertime {
+    width: 8%;
+}
+
+th#root-detail-attendance-header-absenceHours {
+    width: 8%;
+}
+
+th#root-detail-attendance-header-remarks {
+    width: 8%;
+}
+
+p.root-detail-attendance-row-id {
+    display: none;
+}
+
+td.root-detail-attendance-row-request {
+    cursor: pointer;
+}
+
+td.root-detail-attendance-row-cancel {
+    cursor: pointer;
+}
+
+td.root-detail-attendance-row-edit {
+    cursor: pointer;
+}
